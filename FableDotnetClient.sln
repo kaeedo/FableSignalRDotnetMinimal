@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FableDotnet.Shared", "FableDotnet.Shared\FableDotnet.Shared.fsproj", "{1766F12D-2DDE-4EBA-AF6C-6EA85BBBFCBF}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FableDotnet.Server", "FableDotnet.Server\FableDotnet.Server.fsproj", "{692E49C2-557E-4154-AD45-70C5B2959185}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FableDotnet.Client", "FableDotnet.Client\FableDotnet.Client.fsproj", "{672414AB-B2E7-4F5B-9E5F-E081F6260320}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1766F12D-2DDE-4EBA-AF6C-6EA85BBBFCBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1766F12D-2DDE-4EBA-AF6C-6EA85BBBFCBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1766F12D-2DDE-4EBA-AF6C-6EA85BBBFCBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1766F12D-2DDE-4EBA-AF6C-6EA85BBBFCBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{692E49C2-557E-4154-AD45-70C5B2959185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{692E49C2-557E-4154-AD45-70C5B2959185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{692E49C2-557E-4154-AD45-70C5B2959185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{692E49C2-557E-4154-AD45-70C5B2959185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{672414AB-B2E7-4F5B-9E5F-E081F6260320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{672414AB-B2E7-4F5B-9E5F-E081F6260320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{672414AB-B2E7-4F5B-9E5F-E081F6260320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{672414AB-B2E7-4F5B-9E5F-E081F6260320}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
