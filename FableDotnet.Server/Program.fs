@@ -33,7 +33,6 @@ let settings =
       SignalR.Settings.Send = SignalRHub.send
       SignalR.Settings.Invoke = SignalRHub.invoke
       SignalR.Settings.Config =
-          // Doesn't matter if UseMessagePack is true or false. Always works as if it's false
           Some
               { SignalR.Config.Default<FableShared.SignalRHub.Action, FableShared.SignalRHub.Response>() with
                     UseMessagePack = false } }

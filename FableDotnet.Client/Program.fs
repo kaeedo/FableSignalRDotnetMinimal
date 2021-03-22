@@ -8,7 +8,7 @@ let main argv =
         SignalR.Connect<SignalRHub.Action, _, _, SignalRHub.Response, _>(fun hub ->
             hub
                 .WithUrl(sprintf "http://127.0.0.1:5000%s" Endpoints.Root)
-                // .UseMessagePack()
+                //.UseMessagePack()
                 .ConfigureLogging(fun l -> l.SetMinimumLevel(LogLevel.Debug)))
 
     // This works
