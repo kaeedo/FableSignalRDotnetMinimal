@@ -18,21 +18,29 @@ let main argv =
 
         let! res = hub.Invoke <| SignalRHub.Action.OnConnect 1
         printfn "responsed: {%O}" res
-        
+
         do! hub.Stop()
         printfn "ConnectionID: {%O}, State: {%O}" hub.ConnectionId hub.State
     }
     |> Async.RunSynchronously
-    
+
     printfn "-------"
-    
-    // This doesn't work
+
+    // This works now
     async {
         do! hub.Start()
         printfn "ConnectionID: {%O}, State: {%O}" hub.ConnectionId hub.State
 
         do! hub.Send <| SignalRHub.Action.OnConnect 1
-        
+
+        use a =
+            hub.OnMessage(fun b -> async { printfn "onmessage received: %O" b })
+
+        printfn "%O" a
+
+        // This was the key missing piece :(
+        do! Async.Sleep(2000)
+
         do! hub.Stop()
         printfn "ConnectionID: {%O}, State: {%O}" hub.ConnectionId hub.State
     }
